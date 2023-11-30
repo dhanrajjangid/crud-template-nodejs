@@ -14,6 +14,7 @@ const hotelSchema = new mongoose.Schema({
   service: { type: Number, required: true },
   type: { type: String, required: true },
   menu: [menuItemSchema],
+  status: { type: String, required: true },
 });
 
 const Hotel = mongoose.model("Hotel", hotelSchema);
