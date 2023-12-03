@@ -3,7 +3,9 @@ const mongoose = require("mongoose");
 const menuItemSchema = new mongoose.Schema({
   name: { type: String, required: true },
   price: { type: Number, required: true },
-  taste: { type: Number, required: true },
+  taste_rating: { type: Number, required: true },
+  price_rating: { type: Number, required: true },
+  cleanliness_rating: { type: Number, required: true },
 });
 
 const hotelSchema = new mongoose.Schema({
