@@ -25,7 +25,7 @@ app.use(cors()); // Use this line to enable CORS
 
 // Routes
 app.use("/users", userRoutes); // Use '/users' for user-related routes
-app.use("/hotel", hotelRoutes); // Use '/users' for user-related routes
+app.use("/hotel", hotelRoutes); // Use '/hotel' for hotel-related routes
 
 // Start the server
 app.listen(PORT, () => {
